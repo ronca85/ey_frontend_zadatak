@@ -1,0 +1,19 @@
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap);
+
+
+
+$textFont: 'Open Sans', sans-serif;
+
+
+
+@mixin textFont { font-family: $textFont; }
+@mixin fontSize($sizeValue) {
+	font-size: $sizeValue + px;
+	font-size: ($sizeValue / 10) + rem;
+}
+@mixin lineHeight($heightValue, $fontSize) {
+	line-height: ($heightValue / $fontSize) + em;
+}
+

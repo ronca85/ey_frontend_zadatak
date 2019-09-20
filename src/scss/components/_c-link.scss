@@ -1,0 +1,33 @@
+.c-link {
+	color: #fff;
+	text-decoration: none;
+	position: relative;
+	line-height: 36px;
+	display: inline-flex;
+
+	&:before {
+		content: "";
+		display: flex;
+		position: absolute;
+		bottom: 6px;
+		left: 0;
+		right: 0;
+		width: 100%;
+		background: #fff;
+		height: 1px;
+		pointer-events: none;
+		transform: rotate3d(0, 0, 1, 5deg) translate3d(0, 6px, 0);
+		opacity: 0;
+		transition: transform .4s cubic-bezier(0.4, 0, 0.2, 1), opacity .4s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	&:hover {
+		text-decoration: none;
+		&:before {
+			transform: rotate3d(0, 0, 1, 0deg) translate3d(0, 0, 0);
+			transform-origin: left top;
+			opacity: 1;
+		}
+	}
+}
+

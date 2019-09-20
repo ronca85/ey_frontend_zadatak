@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <meta name="description" content="">
+    <meta name="keywords" content="" />
+
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/src/images/favicon/16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/images/favicon/32x32.png">
+
+    <!-- Windows Phone icon -->
+    <!-- <meta name="msapplication-TileImage" content="apple-touch-icon.png"> --><!--favicon_144.png-->
+    <meta name="msapplication-TileColor" content="#2e2e38">
+    <meta name="application-name" content="page title"/>
+    <!-- Chrome, Firefox OS, Opera and Vivaldi -->
+    <meta name="theme-color" content="#2e2e38">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#2e2e38">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#2e2e38">
+    <title>Baltazar</title>
+    <!--
+      ___               
+     /  /\     __       
+    /  /::\   |  |\     
+   /  /:/\:\  |  |:|    
+  /  /::\ \:\ |  |:|    
+ /__/:/\:\ \:\|__|:|__  
+ \  \:\ \:\_\//  /::::\ 
+  \  \:\ \:\ /  /:/~~~~ 
+   \  \:\_\//__/:/      
+    \  \:\  \__\/       
+     \__\/              
+    -->
+    <link rel="stylesheet" href="./dist/css/master.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+</head>
+<body class="site-wrapper js-nav-toggle-hook">
+
+    <div class="w-body">
+
+        <div class="c-headline l-grey">
+            <!-- Art direction (cropping image on mobile) -->
+            <picture>
+                <source srcset="./src/images/headline_image_desktop.png" media="(min-width: 768px)">
+                <source srcset="./src/images/headline_image_mobile.png" media="(min-width: 375px)">
+                <img class="c-headline__img" src="./src/images/headline_image_mobile.png" alt="Ginger cat on the window">
+            </picture>
+        </div>
+
+        <div class="b-main l-grey" id="main">
+
+            <h1 class="c-title c-title--padding">Daily pet facts - Love!</h1>
+
+            <div class="c-card js-trigger-slide">
+                <div class="c-card__img-holder">
+                    <!-- One-way image caching -->
+                    <img class="c-card__img"
+                            srcset="./src/images/meow_mobile.png 345w,
+                                    ./src/images/meow_desktop.png 445w,
+                                    ./src/images/meow_desktop.png 1920w"
+                            sizes="(max-width: 375px) 360px,
+                                    (max-width: 960px) 480px,
+                                    1920px"
+                            src="./src/images/meow_desktop.png" alt="cat">
+                 </div>
+
+                <div class="c-card__content">
+                    <h2 class="c-title c-title--h2">The cat</h2>
+                    <p class="c-paragraph">
+                        Cats have been domesticated for around 4,000 years. While they were once valued for their hunting abilities, they are now valued for their companionship and loving behaviour.
+                        <br><br>
+                        While not well known, the collective nouns used for cats and kittens are a clowder of cats and a kindle of kittens.
+                        <br><br>
+                        Our domestic cats are known as little cats. They differ from large cats such as lions and tigers because they are naturally active at night and can purr.
+                        <br><br>
+                        Cats are now the most popular pet in the UK and in the US.
+                    </p>
+                </div>
+            </div>
+
+            <div class="c-card c-card--img-right js-trigger-slide">
+                <div class="c-card__img-holder">
+                    <!-- One-way image caching -->
+                    <img class="c-card__img"
+                            srcset="./src/images/woof_mobile.png 345w,
+                                    ./src/images/woof_desktop.png 445w,
+                                    ./src/images/woof_desktop.png 1920w"
+                            sizes="(max-width: 375px) 360px,
+                                    (max-width: 960px) 480px,
+                                    1920px"
+                            src="./src/images/woof_desktop.png" alt="dog">
+                </div>
+
+                <div class="c-card__content">
+                    <h2 class="c-title c-title--h2">The dog</h2>
+                    <p class="c-paragraph">
+                        Domestic dogs have been companions to people for more than 15,000 years. There are more than 400 different breeds of dogs. PAWS or your local animal shelter has a wide variety of breeds available for adoption. The most popular types are the non-pedigree. They are extra special because they are one-of-a-kind!
+                        <br><br>
+                        In general, small dogs live longer than large dogs. Small dogs such as terriers may live 20 years. Giant dogs like Great Danes may live eight years. The average lifespan for a mixed breed dog is 13 to 14 years. By making sure dogs have good food, regular veterinary care, shelter and a loving family, they will live longer, healthier lives.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="c-gallery" id="gallery">
+
+            <h1 class="c-title c-title--padding c-title--gallery">Gallery</h1>
+
+            <div class="main-carousel">
+                <div class="carousel-cell">
+                    <div class="c-gallery__item js-gallery-item">
+                        <img src="./src/images/gallery-1.jpg" alt="">
+                        <div class="c-gallery__item-overlay">
+                            <h2>Border Collie</h2>
+                            <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="c-gallery__item js-gallery-item">
+                        <img src="./src/images/gallery-2.jpg" alt="">
+                        <div class="c-gallery__item-overlay">
+                            <h2>Border Collie</h2>
+                            <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="c-gallery__item js-gallery-item">
+                        <img src="./src/images/gallery-3.jpg" alt="">
+                        <div class="c-gallery__item-overlay">
+                            <h2>Border Collie</h2>
+                            <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="b-thumbnails">
+
+            <div class="c-thumbnail">
+                <img class="c-thumbnail__img"
+                        srcset="./src/images/thumb_1_mobile.jpg 157w,
+                                ./src/images/thumb_1_desktop.jpg 250w"
+                        sizes="(max-width: 390px) 157px,
+                                1920px"
+                        src="./src/images/thumb_1_desktop.jpg"
+                alt="cat">
+            </div>
+            <div class="c-thumbnail">
+                <img class="c-thumbnail__img"
+                        srcset="./src/images/thumb_2_mobile.jpg 157w,
+                                ./src/images/thumb_2_desktop.jpg 250w"
+                        sizes="(max-width: 390px) 157px,
+                                1920px"
+                        src="./src/images/thumb_2_desktop.jpg"
+                alt="cat">
+            </div>
+            <div class="c-thumbnail">
+                <img class="c-thumbnail__img"
+                        srcset="./src/images/thumb_3_mobile.jpg 157w,
+                                ./src/images/thumb_3_desktop.jpg 250w"
+                        sizes="(max-width: 390px) 157px,
+                                1920px"
+                        src="./src/images/thumb_3_desktop.jpg"
+                alt="cat">
+            </div>
+            <div class="c-thumbnail">
+                <img class="c-thumbnail__img"
+                        srcset="./src/images/thumb_4_mobile.jpg 157w,
+                                ./src/images/thumb_4_desktop.jpg 250w"
+                        sizes="(max-width: 390px) 157px,
+                                1920px"
+                        src="./src/images/thumb_4_desktop.jpg"
+                alt="cat">
+            </div>
+            <div class="c-thumbnail">
+                <img class="c-thumbnail__img"
+                        srcset="./src/images/thumb_5_mobile.jpg 157w,
+                                ./src/images/thumb_5_desktop.jpg 250w"
+                        sizes="(max-width: 390px) 157px,
+                                1920px"
+                        src="./src/images/thumb_5_desktop.jpg"
+                alt="cat">
+            </div>
+            <div class="c-thumbnail">
+                <img class="c-thumbnail__img"
+                        srcset="./src/images/thumb_6_mobile.jpg 157w,
+                                ./src/images/thumb_6_desktop.jpg 250w"
+                        sizes="(max-width: 390px) 157px,
+                                1920px"
+                        src="./src/images/thumb_6_desktop.jpg"
+                alt="cat">
+            </div>
+            <div class="c-thumbnail">
+                <img class="c-thumbnail__img"
+                        srcset="./src/images/thumb_7_mobile.jpg 157w,
+                                ./src/images/thumb_7_desktop.jpg 250w"
+                        sizes="(max-width: 390px) 157px,
+                                1920px"
+                        src="./src/images/thumb_7_desktop.jpg"
+                alt="cat">
+            </div>
+            <div class="c-thumbnail">
+                <img class="c-thumbnail__img"
+                        srcset="./src/images/thumb_8_mobile.jpg 157w,
+                                ./src/images/thumb_8_desktop.jpg 250w"
+                        sizes="(max-width: 390px) 157px,
+                                1920px"
+                        src="./src/images/thumb_8_desktop.jpg"
+                alt="cat">
+            </div>
+
+        </div>
+
+        <div class="c-contact" id="contact">
+
+            <h1 class="c-title c-title--padding c-title--contact">Say hello!</h1>
+
+            <p class="c-form__msg c-form__msg--success js-form-success">Success.</p>
+            <p class="c-form__msg c-form__msg--error js-form-error">Error. Try Again.</p>
+
+            <form class="c-form">
+
+                <div class="c-form__input-holder">
+                    <label class="c-form__label" for="email">Email:</label>
+                    <input class="c-form__field js-required" type="email" name="email" required>
+                </div>
+
+                <div class="c-form__input-holder">
+                    <label class="c-form__label" for="fullName">Name and surname:</label>
+                    <input class="c-form__field js-required" type="text" name="fullName" minlength="2" maxlength="30" required>
+                </div>
+
+                <div class="c-form__input-holder">
+                    <label class="c-form__label" for="message">Message:</label>
+                    <textarea class="c-form__field c-form__field--textarea js-required" name="message" required></textarea>
+                </div>
+
+                <div class="c-form__input-holder c-form__input-holder--radios">
+                    <label class="c-form__label" for="sex">Sex:</label>
+
+                    <div class="c-form__radios-aligner">
+                        <input class="c-form__radio js-check-radio" type="radio" name="gender" id="radio-sex-1" value="male" checked>
+                        <label class="c-form__label c-form__label--radios" for="radio-sex-1">Male</label>
+
+                        <input class="c-form__radio js-check-radio" type="radio" name="gender" id="radio-sex-2" value="female">
+                        <label class="c-form__label                     c-form__label--radios" for="radio-sex-2">Female</label>
+
+                        <input class="c-form__radio js-check-radio" type="radio" name="gender" id="radio-sex-3" value="will not say">
+                        <label class="c-form__label                     c-form__label--radios" for="radio-sex-3">Will not say</label>
+                    </div>
+
+                </div>
+
+                <div class="c-form__btn-aligner">
+                    <input class="c-form__submit js-submit-button" type="submit" value="Send">
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <div class="header">
+        <nav class="c-nav l-grey">
+
+            <div class="c-nav__toggle js-nav-toggle">
+            </div>
+
+            <img  class="c-nav__brand-logo" src="./src/images/brand-logo.jpg" alt="brand logo">
+
+            <ul class="c-nav__list">
+                <li class="c-nav__item">
+                    <a class="c-nav__link js-scroll-to" href="#main">Daily pet facts</a>
+                </li>
+                <li class="c-nav__item">
+                    <a class="c-nav__link js-scroll-to" href="#gallery">Gallery</a>
+                </li>
+                <li class="c-nav__item">
+                    <a class="c-nav__link js-scroll-to" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <footer class="c-footer">
+
+        <div class="l-container">
+
+            <div class="c-footer__main">
+
+                <div class="c-footer__block">
+                    <p class="c-footer__title">pet-facts.com</p>
+                    <ul class="c-list">
+                        <li class="c-list__item">
+                            <a class="c-link" href="#">About us</a>
+                        </li>
+                        <li class="c-list__item">
+                            <a class="c-link" href="#">Careers</a>
+                        </li>
+                        <li class="c-list__item">
+                            <a class="c-link" href="#">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="c-footer__block">
+                    <p class="c-footer__title">Our brands</p>
+                    <ul class="c-list">
+                        <li class="c-list__item">
+                            <a class="c-link" href="#">Supercoat</a>
+                        </li>
+                        <li class="c-list__item">
+                            <a class="c-link" href="#">Fancy Feast</a>
+                        </li>
+                        <li class="c-list__item">
+                            <a class="c-link" href="#">Pro Plan</a>
+                        </li>
+                        <li class="c-list__item">
+                            <a class="c-link" href="#">Beyond</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="c-footer__block">
+                    <p class="c-footer__title">Contact us</p>
+                    <ul class="c-list">
+                        <li class="c-list__item">
+                            <a class="c-link" href="#">Contact us</a>
+                        </li>
+                        <li class="c-list__item">
+                            <a class="c-link" href="#">Terms & Conditions</a>
+                        </li>
+                        <li class="c-list__item">
+                            <a class="c-link" href="#">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="c-footer__legal">
+                <p class="c-footer__paragraph">
+                    Copyright is a legal right, existing in many countries, that grants the creator of an original work exclusive rights to determine whether, and under what conditions, this original work may be used by others.
+                </p>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="dist/js/foot.js"></script>
+</body>
+</html>
+
